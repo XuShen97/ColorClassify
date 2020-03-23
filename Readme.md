@@ -18,23 +18,22 @@ IDE：PyCharm 2019.3.4
 
 这是一个最简单最基础的分类器算法：设颜色的特征向量为 $[R, G, B]$ ，则预测函数为
 
-$$ h_\theta (x) = \theta_0 + \theta_1 R + \theta_2 G + \theta_3 B $$
+![h](https://github.com/XuShen97/ColorClassify/img/h.png)
 
 损失函数：
-$$ J=\frac{1}{m}\sum_{i=1}^m(-y^{(i)} * \log_2(h(x^{(i)})) - (1 - y^{(i)}) * \log_2(1 - h(x^{(i)})))
-$$
+![j](https://github.com/XuShen97/ColorClassify/img/j.png)
 
 使用梯度下降法求解最优值，更新方法：
 
-$$\theta_j := \theta_j - \alpha \frac{\sum_{i=1}^m(h(x^{(i)}) - y^{(i)}) x_j^{(i)}}{m}$$
+![theta](https://github.com/XuShen97/ColorClassify/img/theta.png)
 
-其中$x$, $y$ 是向量，以确保同时更新$\theta$
+其中x, y是向量，以确保同时更新θ
 
 参数表
 
-|$\alpha$|$[\theta_0, \theta_1, \theta_2, \theta_3 ]$|$\varepsilon$|
+|α|[θ_0, θ_1, θ_2, θ_3 ]|ε|
 |:---:|:---:|:---:|
-|$1e-5$|$[-1, -1, -1, -1]$|$1e-3$|
+|1e-5|[-1, -1, -1, -1]|1e-3|
 
 作者为其写了一些输入输出的图形界面，以便于使用。
 
