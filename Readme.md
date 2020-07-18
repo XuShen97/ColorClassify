@@ -18,14 +18,14 @@ IDE：PyCharm 2019.3.4
 
 这是一个最简单最基础的分类器算法：设颜色的特征向量为 [R, G, B] ，则预测函数为
 
-![h](https://github.com/XuShen97/ColorClassify/blob/master/img/formula-img-h.png)
+![h](img/formula-img-h.png)
 
 损失函数：
-![j](https://github.com/XuShen97/ColorClassify/blob/master/img/formula-img-j.png)
+![j](img/formula-img-j.png)
 
 使用梯度下降法求解最优值，更新方法：
 
-![theta](https://github.com/XuShen97/ColorClassify/blob/master/img/formula-img-theta.png)
+![theta](img/formula-img-theta.png)
 
 其中x, y是向量，以确保同时更新θ
 
